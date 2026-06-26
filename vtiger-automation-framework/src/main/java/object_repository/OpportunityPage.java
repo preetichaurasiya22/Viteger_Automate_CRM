@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * OpportunityPage POM — Elements for the Opportunities module.
  * 
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class OpportunityPage {
 

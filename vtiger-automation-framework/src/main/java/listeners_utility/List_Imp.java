@@ -25,13 +25,12 @@ import generic_utility.WebDriverUtility;
  *   - ISuiteListener : creates / flushes ExtentReports at suite level
  *   - ITestListener  : logs PASS / FAIL / SKIP per test method
  
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class List_Imp implements ITestListener, ISuiteListener {
 
     public ExtentReports report;
 
-    // FIX 1: ThreadLocal so each thread has its own ExtentTest instance
     private ThreadLocal<ExtentTest> tlTest = new ThreadLocal<>();
 
     // ==============================
@@ -42,7 +41,6 @@ public class List_Imp implements ITestListener, ISuiteListener {
         System.out.println("[LISTENER] Suite Started: " + suite.getName());
 
         String time = JavaUtility.genCurrentTime();
-        // FIX 3: folder name corrected to advance_reports
         ExtentSparkReporter spark = new ExtentSparkReporter("./advance_reports/" + time + ".html");
         spark.config().setDocumentTitle("Vtiger CRM Automation Report");
         spark.config().setReportName("Vtiger CRM Test Execution");
@@ -51,7 +49,6 @@ public class List_Imp implements ITestListener, ISuiteListener {
         report = new ExtentReports();
         report.attachReporter(spark);
 
-        // FIX 4: Meaningful system info
         report.setSystemInfo("Project",     "Vtiger CRM Automation");
         report.setSystemInfo("Author",      "Preeti");
         report.setSystemInfo("Environment", "localhost:8888");
@@ -91,7 +88,6 @@ public class List_Imp implements ITestListener, ISuiteListener {
         tlTest.get().log(Status.FAIL, methodName + " — FAILED");
         tlTest.get().log(Status.FAIL, "Reason: " + result.getThrowable().getMessage());
 
-        // FIX 2: Auto screenshot on failure
         try {
             Object testInstance = result.getInstance();
             if (testInstance instanceof BaseClass) {

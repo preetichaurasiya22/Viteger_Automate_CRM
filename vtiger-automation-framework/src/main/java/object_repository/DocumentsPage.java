@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * DocumentsPage POM — Elements for the Documents module.
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class DocumentsPage {
 

@@ -30,7 +30,7 @@ import object_repository.LoginPage;
  *   - @AfterMethod  : Logout from CRM using HomePage POM
  *   - @AfterClass   : Quit browser
  *   
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 @Listeners(listeners_utility.List_Imp.class)
 public class BaseClass {
@@ -85,7 +85,6 @@ public class BaseClass {
 
     // ==============================
     // LOGOUT AFTER EVERY TEST METHOD
-    // FIX: using HomePage POM instead of raw locator
     // ==============================
     @AfterMethod
     public void logout() {

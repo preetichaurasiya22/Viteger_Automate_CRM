@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 /**
  * HomePage POM — Navigation links + profile/logout elements.
  * 
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class HomePage {
 

@@ -19,7 +19,7 @@ import org.json.simple.parser.ParseException;
  * FileUtility — Reusable utility for reading test data from:
  *   1. JSON file  (commondata.json)
  *   2. Excel file (testScriptData.xlsx)
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class FileUtility {
 
@@ -35,7 +35,6 @@ public class FileUtility {
     public String getDataFromJsonFile(String key)
             throws FileNotFoundException, IOException, ParseException {
 
-        // FIX: try-with-resources auto-closes FileReader
         try (FileReader fr = new FileReader(JSON_PATH)) {
             JSONParser parser = new JSONParser();
             JSONObject jObj   = (JSONObject) parser.parse(fr);
@@ -62,7 +61,6 @@ public class FileUtility {
 
         FileInputStream fis = new FileInputStream(EXCEL_PATH);
 
-        // FIX: Workbook closed in finally block to release file handle
         Workbook wb = null;
         try {
             wb   = WorkbookFactory.create(fis);

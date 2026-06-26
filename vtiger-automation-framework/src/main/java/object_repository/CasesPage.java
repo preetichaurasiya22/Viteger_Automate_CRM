@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * CasesPage POM — Elements for the Cases (Support) module.
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class CasesPage {
 

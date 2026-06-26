@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * ProductsPage POM — Elements for the Products module.
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class ProductsPage {
 

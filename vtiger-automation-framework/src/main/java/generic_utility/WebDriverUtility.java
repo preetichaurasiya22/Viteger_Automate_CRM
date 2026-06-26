@@ -31,7 +31,7 @@ import com.google.common.io.Files;
  * also includes additional utilities such as alerts, scrolling, screenshot, JS
  * execution, drag-drop, sliders, and more.
  * 
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class WebDriverUtility {
 

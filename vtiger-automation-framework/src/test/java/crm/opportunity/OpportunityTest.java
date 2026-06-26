@@ -20,7 +20,7 @@ import object_repository.OpportunityPage;
 /**
  * OpportunityTest — Automates Create Opportunity flow in Vtiger CRM.
  *
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class OpportunityTest extends BaseClass {
 

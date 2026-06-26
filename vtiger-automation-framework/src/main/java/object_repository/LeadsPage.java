@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 /**
  * LeadsPage POM — Elements for the Leads module.
- * @author Preeti
+ * @author Preeti chaurasiya
  */
 public class LeadsPage {
 
