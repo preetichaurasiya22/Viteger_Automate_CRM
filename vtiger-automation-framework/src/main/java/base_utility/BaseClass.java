@@ -99,7 +99,7 @@ public class BaseClass {
     }
 
     // ==============================
-    // CLOSE BROWSER
+    // 		CLOSE BROWSER
     // ==============================
     @AfterClass
     public void tearDown() {
