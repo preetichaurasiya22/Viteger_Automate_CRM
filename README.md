@@ -1,11 +1,11 @@
-# Viteger Automate CRM
+ Viteger Automate CRM
 
 A production-ready **Selenium + TestNG + Java** automation framework for the [Vtiger CRM](https://www.vtiger.com/) 
 platform, built with Maven, Page Object Model, Data-Driven Testing, and Extent Reports.
 
 ---
 
-## 🧰 Tech Stack
+  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -19,7 +19,7 @@ platform, built with Maven, Page Object Model, Data-Driven Testing, and Extent R
 
 ---
 
-## 📁 Project Structure
+ Project Structure
 
 ```
 vtiger-automation-framework/
@@ -74,7 +74,7 @@ vtiger-automation-framework/
 
 ---
 
-## ✅ Test Coverage
+ Test Coverage
 
 | Module | Test Class | What's Automated |
 |---|---|---|
@@ -88,7 +88,7 @@ vtiger-automation-framework/
 
 ---
 
-## ⚙️ Prerequisites
+ Prerequisites
 
 - Java 17+
 - Maven 3.9+
@@ -97,7 +97,7 @@ vtiger-automation-framework/
 
 ---
 
-## 🔧 Configuration
+ Configuration
 
 Update `src/test/resources/commondata.json` before running:
 
@@ -114,7 +114,7 @@ Supported browser values: `chrome`, `edge`, `firefox`, `safari`
 
 ---
 
-## ▶️ How to Run
+ How to Run
 
 **Run full suite via Maven:**
 ```bash
@@ -133,14 +133,14 @@ mvn test
 
 ---
 
-## 📊 Reports & Screenshots
+ Reports & Screenshots
 
 - **HTML Extent Report** → auto-generated in `advance_reports/` after every suite run
 - **Failure Screenshots** → auto-captured in `screenshots/` via TestNG Listener on any test failure
 
 ---
 
-## 🏗️ Framework Design
+ Framework Design
 
 - **Page Object Model (POM)** — UI locators separated from test logic
 - **BaseClass** — Centralized `@BeforeClass` (browser launch) and `@BeforeMethod/@AfterMethod` (login/logout) so each test method always starts with a fresh session
@@ -150,6 +150,6 @@ mvn test
 
 ---
 
-## 👩‍💻 Author
+ Author
 **Preeti Chaurasiya**  
 GitHub: [@preetichaurasiya22](https://github.com/preetichaurasiya22)
